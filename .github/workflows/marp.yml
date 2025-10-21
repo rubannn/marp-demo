@@ -2,7 +2,7 @@ name: Build and Deploy Marp presentation
 
 on:
   push:
-    branches: [ "main" ] 
+    branches: [ "main" ]
 
 permissions:
   contents: write
@@ -24,11 +24,11 @@ jobs:
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
 
-      - name: Build HTML
-        run: marp slides.md -o index.html
+      - name: Build HTML with custom theme
+        run: marp slides.md --theme themes/codeverse.css -o index.html
 
-      - name: Build PDF
-        run: marp slides.md -o slides.pdf
+      - name: Build PDF with custom theme
+        run: marp slides.md --theme themes/codeverse.css -o slides.pdf
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
