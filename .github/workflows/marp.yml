@@ -1,8 +1,12 @@
-name: Build Marp presentation
+name: Build and Deploy Marp presentation
 
 on:
   push:
-    branches: ["main"] # запускать при коммитах в main
+    branches: [ "main" ] 
+
+permissions:
+  contents: write
+  pages: write
 
 jobs:
   build:
@@ -15,16 +19,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: '18'
 
       - name: Install Marp CLI
         run: npm install -g @marp-team/marp-cli
 
-      - name: Build presentation
+      - name: Build HTML
         run: marp slides.md -o index.html
+
+      - name: Build PDF
+        run: marp slides.md -o slides.pdf
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./
