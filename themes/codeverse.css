@@ -54,7 +54,9 @@ h3 {
   z-index: 10;
 }
 
-/* Подвал */
+
+/* Обычный футер (по умолчанию для всех слайдов) */
+/* Обычный футер (по умолчанию для всех слайдов) */
 section::after {
   content: "CODEVERSE TEAM";
   position: absolute;
@@ -62,6 +64,38 @@ section::after {
   right: 20px;
   font-size: 0.7em;
   color: #555;
+}
+
+/* Последний слайд имеет особый класс */
+section.last-slide::after {
+  content: "⬇Завантажити PDF-версію";
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  color: var(--accent-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Чтобы сделать кликабельным — через <a> внутри */
+.footer-link {
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+  transform: translateX(-50%);
+  font-size: 0.15em;
+}
+
+.footer-link a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  /* border-bottom: 1px dashed var(--accent-color); */
+  transition: color 0.3s ease;
+}
+
+.footer-link a:hover {
+  color: #00cca3;
 }
 
 
