@@ -220,30 +220,29 @@ paginate: true
   <div class="tech-col">
     <h3>Front-end</h3>
     <ul>
-      <li>HTML / CSS</li>
-      <li>JavaScript</li>
+      <li><img src="img/tech/html5.svg"> HTML / CSS</li>
+      <li><img src="img/tech/javascript.svg"> JavaScript</li>
     </ul>
   </div>
 
   <div class="tech-col">
     <h3>Back-end</h3>
     <ul>
-      <li>Node.js</li>
-      <li>Vite.js</li>
+      <li><img src="img/tech/nodedotjs.svg"> Node.js</li>
+      <li><img src="img/tech/vite.svg"> Vite.js</li>
     </ul>
   </div>
 
   <div class="tech-col">
     <h3>Utilities</h3>
     <ul>
-      <li>VS Code</li>
-      <li>Figma</li>
-      <li>Git / GitHub</li>
+      <li><img src="img/tech/vscode.svg"> VS Code</li>
+      <li><img src="img/tech/figma.svg"> Figma</li>
+      <li><img src="img/tech/github.svg"> Git / GitHub</li>
     </ul>
   </div>
 
 </div>
-
 
 ---
 

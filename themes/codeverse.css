@@ -174,8 +174,20 @@ section::after {
 }
 
 .tech-col li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* расстояние между иконкой и текстом */
   margin: 8px 0;
   font-size: 0.9em;
+}
+
+.tech-col li img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  /* единый фирменный цвет */
+  filter: invert(69%) sepia(90%) saturate(542%) hue-rotate(120deg) brightness(95%) contrast(102%);
 }
 
 /* Последний слайд */
