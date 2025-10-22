@@ -2,47 +2,50 @@
 @import 'default';
 
 section {
-    background: #0d1117;
-    /* фон (тёмный) */
-    color: #e6edf3;
-    /* текст */
-    font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #0d1117;
+  /* фон (тёмный) */
+  color: #e6edf3;
+  /* текст */
+  font-family: 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Заголовки */
 h1,
 h2,
 h3 {
-    color: #00ffcc;
-    font-weight: 700;
-    text-align: center;
+  color: #00ffcc;
+  font-weight: 700;
+  text-align: center;
 }
 
 /* Подвал */
 section::after {
-    content: "CODEVERSE TEAM";
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    font-size: 0.7em;
-    color: #555;
+  content: "CODEVERSE TEAM";
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 0.7em;
+  color: #555;
 }
 
 /* Стили для блоков команды */
 .team-grid {
   display: flex;
   flex-direction: column;
-  gap: 30px;               /* расстояние между рядами */
+  gap: 30px;
+  /* расстояние между рядами */
   align-items: center;
 }
 
 .team-row {
   display: flex;
-  gap: 100px;               /* расстояние по горизонтали */
+  gap: 100px;
+  /* расстояние по горизонтали */
 }
 
 .team-row.offset {
-  margin-left: 200px;       /* смещение второго ряда для шахматного эффекта */
+  margin-left: 200px;
+  /* смещение второго ряда для шахматного эффекта */
 }
 
 .team-member {
@@ -61,18 +64,58 @@ section::after {
 /* Имя */
 .team-member p b {
   display: block;
-  font-size: 0.8em;      /* ещё меньше */
+  font-size: 0.8em;
+  /* ещё меньше */
   color: #e6edf3;
-  margin-bottom: 1px;    /* отступ под именем */
+  margin-bottom: 1px;
+  /* отступ под именем */
 }
 
 /* Роль */
 .team-member p {
-  margin: 8px 0 0;       /* больше воздуха сверху */
-  font-size: 0.6em;      /* меньше текст роли */
+  margin: 8px 0 0;
+  /* больше воздуха сверху */
+  font-size: 0.6em;
+  /* меньше текст роли */
   color: #00ffcc;
   font-style: italic;
   border-top: 1px solid #00ffcc33;
-  padding-top: 4px;      /* чуть больше пространства над ролью */
-  line-height: 1.3;      /* не слишком плотно */
+  padding-top: 4px;
+  /* чуть больше пространства над ролью */
+  line-height: 1.3;
+  /* не слишком плотно */
+}
+
+/* person-slide */
+.person-slide {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  /* расстояние между колонками */
+}
+
+.person-left {
+  flex: 0 0 250px;
+  /* фиксированная ширина левой части */
+  text-align: center;
+}
+
+.person-left h2 {
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  color: #00ffcc;
+}
+
+.person-left img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #00ffcc;
+}
+
+.person-right {
+  flex: 1;
+  font-size: 0.9em;
+  line-height: 1.5;
 }
