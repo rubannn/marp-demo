@@ -15,6 +15,7 @@
 
 /* Определяем имя темы */
 @import 'default';
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
 section {
   background: var(--bg-color);
@@ -62,6 +63,56 @@ section::after {
   font-size: 0.7em;
   color: #555;
 }
+
+
+
+/* Титульный слайд */
+.title-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 40px;
+  gap: 60px;
+}
+
+/* Левый блок */
+.title-left {
+  flex: 1;
+}
+
+.title-left h1 {
+  font-size: 3em;
+  font-family: 'Orbitron', sans-serif;
+  /* современный техно-шрифт */
+  color: var(--accent-color);
+  margin: 0 0 20px;
+}
+
+.title-left h2 {
+  font-size: 1.5em;
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* Правый блок */
+.title-right {
+  flex: 1;
+  text-align: center;
+}
+
+.title-right img {
+  max-width: 250px;
+  margin-bottom: 15px;
+}
+
+.title-right p {
+  font-size: 1.2em;
+  color: var(--accent-color);
+  font-style: italic;
+}
+
+
 
 /* Стили для блоков команды */
 .team-grid {
