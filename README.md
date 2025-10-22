@@ -29,7 +29,7 @@
 ### 🔹 Збірка HTML з кастомною темою
 
 ```bash
-marp slides.md --theme themes/codeverse.css -o index.html --allow-local-files
+marp slides.md --theme themes/codeverse.css -o index.html
 ```
 
 ### 🔹 Збірка PDF з кастомною темою
