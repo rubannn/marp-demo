@@ -7,13 +7,22 @@ paginate: true
 
 <img src="img/logo.png" class="logo-top-right">
 
-## 💻 CODEVERSE
-### Код, що об'єднує світ
 
-<img src="img/logo-team.jpg" class="logo-bottom-left">
+<div class="title-slide">
+
+  <div class="title-left">
+    <h1>CODEVERSE</h1>
+    <h2></h2>
+  </div>
+
+  <div class="title-right">
+    <img src="img/logo-team.jpg" alt="Логотип">
+    <p>Код, що об'єднує світ</p>
+  </div>
+</div>
+
 
 ---
-
 <img src="img/logo.png" class="logo-top-right">
 
 ## УЧАСНИКИ КОМАНДИ
