@@ -24,12 +24,12 @@ paginate: true
 
 ---
 <img src="img/logo.png" class="logo-top-right">
+<img src="img/logo-team.jpg" class="logo-bottom-left">
 
-## УЧАСНИКИ КОМАНДИ
-
+<section>
+<h2>УЧАСНИКИ КОМАНДИ</h2>
 
 <div class="team-grid">
-
   <div class="team-row">
     <div class="team-member">
       <img src="img/team/person01.png">
@@ -67,12 +67,12 @@ paginate: true
       <p><b>Олена Бадун</b><br>Software Engineer</p>
     </div>
   </div>
-
 </div>
-<img src="img/logo-team.jpg" class="logo-bottom-left">
+</section>
 
 ---
 
+<img src="img/logo.png" class="logo-top-right">
 <div class="person-slide">
 
   <div class="person-left">
@@ -94,6 +94,7 @@ paginate: true
 
 ---
 
+<img src="img/logo.png" class="logo-top-right">
 <div class="person-slide">
   <div class="person-left">
     <h2>Вікторія Матюшко</h2>
@@ -112,6 +113,7 @@ paginate: true
 
 ---
 
+<img src="img/logo.png" class="logo-top-right">
 <div class="person-slide">
   <div class="person-left">
     <h2>Едуард Болма</h2>
@@ -130,6 +132,7 @@ paginate: true
 
 ---
 
+<img src="img/logo.png" class="logo-top-right">
 <div class="person-slide">
   <div class="person-left">
     <h2>Сергій Сидоренко</h2>
@@ -149,6 +152,7 @@ paginate: true
 
 ---
 
+<img src="img/logo.png" class="logo-top-right">
 <div class="person-slide">
   <div class="person-left">
     <h2>Олександр Сорочинський</h2>
@@ -167,6 +171,7 @@ paginate: true
 
 ---
 
+<img src="img/logo.png" class="logo-top-right">
 <div class="person-slide">
   <div class="person-left">
     <h2>Олєгс Совєтовс</h2>
@@ -185,6 +190,7 @@ paginate: true
 
 ---
 
+<img src="img/logo.png" class="logo-top-right">
 <div class="person-slide">
   <div class="person-left">
     <h2>Ольга Фурсова</h2>
@@ -203,6 +209,7 @@ paginate: true
 
 ---
 
+<img src="img/logo.png" class="logo-top-right">
 <div class="person-slide">
   <div class="person-left">
     <h2>Олена Бадун</h2>
@@ -220,8 +227,9 @@ paginate: true
 </div>
 
 ---
-<img src="img/logo.png" class="logo-top-right">
 
+<img src="img/logo.png" class="logo-top-right">
+<img src="img/logo-team.jpg" class="logo-bottom-left">
 <h2>Технології які використовувались</h2>
 
 <div class="tech-row">
@@ -255,10 +263,13 @@ paginate: true
 
 ---
 
-<img src="img/logo.png" class="logo-top-right">
-
-<div class="thank-slide">
+<section class="last-slide thank-slide">
   <h2>Дякуємо за увагу!</h2>
-</div>
 
-<img src="img/logo-team.jpg" class="logo-bottom-left">
+  <img src="img/logo.png" class="logo-top-right">
+  <img src="img/logo-team.jpg" class="logo-bottom-left">
+
+  <div class="footer-link">
+    <a href="slides.pdf" download>Завантажити PDF-версію</a>
+  </div>
+</section>
