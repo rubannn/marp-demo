@@ -1,21 +1,21 @@
 # 📊 Marp Demo (CODEVERSE Theme)
 
-Презентація створена за допомогою [Marp](https://marp.app/) з кастомною темою **Codeverse**.
+Presentation created with [Marp](https://marp.app/) using a custom **Codeverse** theme.
 
 ---
 
-## 🚀 Встановлення
+## 🚀 Installation
 
-1. Встановіть **Node.js** (рекомендується LTS, наприклад v18):
-   👉 [Завантажити Node.js](https://nodejs.org/)
+1. Install **Node.js** (LTS recommended, e.g. v18):
+   👉 [Download Node.js](https://nodejs.org/)
 
-2. Встановіть **Marp CLI** глобально:
+2. Install **Marp CLI** globally:
 
    ```bash
    npm install -g @marp-team/marp-cli
    ```
 
-3. Клонувати цей репозиторій:
+3. Clone this repository:
 
    ```bash
    git clone https://github.com/<username>/<repo>.git
@@ -24,39 +24,39 @@
 
 ---
 
-## 🛠 Використання
+## 🛠 Usage
 
-### 🔹 Збірка HTML з кастомною темою
+### 🔹 Build HTML with custom theme
 
 ```bash
 marp slides.md --theme themes/codeverse.css -o index.html
 ```
 
-### 🔹 Збірка PDF з кастомною темою
+### 🔹 Build PDF with custom theme
 
 ```bash
 marp slides.md --theme themes/codeverse.css -o slides.pdf --allow-local-files
 ```
 
-### 🔹 Перегляд у браузері (live server)
+### 🔹 Live preview in browser
 
 ```bash
 marp -s --theme themes/codeverse.css
 ```
 
-Після цього відкрийте у браузері:
-👉 [http://localhost:8080/slides.md](http://localhost:8080/slides.md)
+Then open in your browser:
+👉 [http://localhost:8080/index.html](http://localhost:8080/index.html)
 
 ---
 
-## 📂 Структура проекту
+## 📂 Project Structure
 
 ```
 .
-├── slides.md               # основний файл презентації
+├── slides.md               # main presentation file
 ├── themes/
-│   └── codeverse.css       # кастомна тема
-├── img/                    # картинки та іконки
+│   └── codeverse.css       # custom theme
+├── img/                    # images and icons
 │   ├── logo.png
 │   ├── team/
 │   └── tech/
@@ -65,63 +65,22 @@ marp -s --theme themes/codeverse.css
 
 ---
 
-## 🔄 Автоматична збірка (GitHub Actions)
+## 🔄 Automatic Build (GitHub Actions)
 
-Файл workflow: `.github/workflows/marp.yml`
-
-```yaml
-name: Build and Deploy Marp presentation
-
-on:
-  push:
-    branches: [ "main" ]
-
-permissions:
-  contents: write
-  pages: write
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Install Marp CLI
-        run: npm install -g @marp-team/marp-cli
-
-      - name: Build HTML with custom theme
-        run: marp slides.md --theme themes/codeverse.css -o index.html --allow-local-files
-
-      - name: Build PDF with custom theme
-        run: marp slides.md --theme themes/codeverse.css -o slides.pdf --allow-local-files
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./
-```
+Workflow file: `.github/workflows/marp.yml`
 
 ---
 
-## 🌐 Доступ до результатів
+## 🌐 Access the Results
 
-Після пушу у `main` збираються та публікуються файли:
+After pushing to `main`, files are built and published automatically:
 
-- [index.html](https://<username>.github.io/<repo>/index.html) — презентація у браузері
-- [slides.pdf](https://<username>.github.io/<repo>/slides.pdf) — PDF-версія для завантаження
+- [index.html](https://<username>.github.io/<repo>/index.html) — presentation in browser
+- [slides.pdf](https://<username>.github.io/<repo>/slides.pdf) — downloadable PDF version
 
 ---
 
-## 💡 Корисні посилання
+## 💡 Useful Links
 
 - [Marp CLI Documentation](https://github.com/marp-team/marp-cli)
 - [Marp Themes Guide](https://marpit.marp.app/theme-css)
