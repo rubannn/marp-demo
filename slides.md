@@ -2,14 +2,19 @@
 marp: true
 theme: codeverse
 paginate: true
+
 ---
 
-<!-- Титульный -->
+<img src="img/logo.png" class="logo-top-right">
+
 ## 💻 CODEVERSE
 ### Код, що об'єднує світ
-![bg](img/logo-team.jpg)
+
+<img src="img/logo-team.jpg" class="logo-bottom-left">
 
 ---
+
+<img src="img/logo.png" class="logo-top-right">
 
 ## УЧАСНИКИ КОМАНДИ
 
@@ -55,9 +60,9 @@ paginate: true
   </div>
 
 </div>
+<img src="img/logo-team.jpg" class="logo-bottom-left">
 
 ---
-
 
 <div class="person-slide">
 
@@ -206,20 +211,46 @@ paginate: true
 </div>
 
 ---
+<img src="img/logo.png" class="logo-top-right">
 
-## Технології
+<h2>Технології які використовувались</h2>
 
-**Front-end**
-![w:80](img/tech/html.png) ![w:80](img/tech/css.png) ![w:80](img/tech/js.png)
+<div class="tech-row">
 
-**Back-end**
-![w:80](img/tech/node.png) ![w:80](img/tech/vite.png)
+  <div class="tech-col">
+    <h3>Front-end</h3>
+    <ul>
+      <li>HTML / CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </div>
 
-**Utilities**
-![w:80](img/tech/git.png) ![w:80](img/tech/figma.png) ![w:80](img/tech/vscode.png)
+  <div class="tech-col">
+    <h3>Back-end</h3>
+    <ul>
+      <li>Node.js</li>
+      <li>Vite.js</li>
+    </ul>
+  </div>
+
+  <div class="tech-col">
+    <h3>Utilities</h3>
+    <ul>
+      <li>VS Code</li>
+      <li>Figma</li>
+      <li>Git / GitHub</li>
+    </ul>
+  </div>
+
+</div>
+
 
 ---
 
-## Слоган
+<img src="img/logo.png" class="logo-top-right">
 
-> **CODEVERSE — Код, що об'єднує світ**
+<div class="thank-slide">
+  <h2>Дякуємо за увагу!</h2>
+</div>
+
+<img src="img/logo-team.jpg" class="logo-bottom-left">
