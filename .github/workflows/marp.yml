@@ -28,7 +28,7 @@ jobs:
         run: marp slides.md --theme themes/codeverse.css -o index.html
 
       - name: Build PDF with custom theme
-        run: marp slides.md --theme themes/codeverse.css -o slides.pdf
+        run: marp slides.md --theme themes/codeverse.css -o slides.pdf --allow-local-files
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
